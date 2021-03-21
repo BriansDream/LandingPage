@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.navbar {
+    z-index: 1;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+
+
+/* Ketika di sorot */
+.nav-link:hover::after {
+    content: "";
+    display: block;
+
+    border-bottom: 3px solid cornflowerblue;
+    padding-top: 5px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -8px;
+
+}
+
+/* akhir */
+
+
+/* Utility*/
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+
+}
+
+/* Akhir */
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 640px;
+    margin-top: -75px;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron .display-4 {
+    margin-top: 150px;
+    font-weight: 200;
+    margin-bottom: 30px;
+
+}
+
+.jumbotron .display-4 span {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.jumbotron::after {
+    content: "";
+    width: 100%;
+    height: 80%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+
+}
+
+/* akhir */
+
+
+/* Info Panel */
+
+.info-panel {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-top: -120px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* Akhir info panel */
+
+/* Working space */
+.working-space {
+    margin-top: 120px;
+}
+
+.working-space h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.working-space h3 span {
+    font-weight: 500;
+}
+
+.working-space p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 25px 0;
+}
+
+/* akhir working space */
+
+
+/* Testimoni */
+.testimoni {
+    margin-top: 100px;
+}
+
+.testimoni h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+
+
+.testimoni figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c2c5d;
+
+}
+
+.testimoni figure p {
+    font-size: 12px;
+    color: #acacac;
+    margin-top: -5px;
+
+
+}
+
+.testimoni figcaption {
+    text-align: center;
+}
+
+.testimoni figure img {
+    width: 60px;
+    margin: 20px 10px 10px;
+    opacity: 0.7;
+}
+
+.testimoni figure img.utama {
+    width: 90px;
+    margin: 20px 15px 10px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+/* akhir */
+
+/* footer */
+
+footer p {
+    color: #acacac;
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+
+/* akhir footer */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-link {
+        text-transform: none;
+    }
+
+    .jumbotron {
+        margin-top: 0;
+        height: 540px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 2rem;
+    }
+
+    .nav-link:hover::after {
+
+        display: none;
+
+    }
+
+
+    .working-space {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .testimoni h5 {
+        font-size: 24px;
+    }
+
+
+    .navbar-brand,
+    .nav-link {
+        color: black !important;
+    }
+
+}
